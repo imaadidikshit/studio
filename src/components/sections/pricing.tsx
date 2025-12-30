@@ -6,6 +6,7 @@ import { Switch } from '@/components/ui/switch';
 import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import MagneticButton from '@/components/magnetic-button';
+import Link from 'next/link';
 
 const pricingTiers = [
   {
@@ -20,6 +21,7 @@ const pricingTiers = [
       'Community support',
     ],
     isPopular: false,
+    href: '/signup'
   },
   {
     name: 'Pro',
@@ -34,6 +36,7 @@ const pricingTiers = [
       'API access',
     ],
     isPopular: true,
+    href: '/signup'
   },
   {
     name: 'Enterprise',
@@ -48,6 +51,7 @@ const pricingTiers = [
       'On-premise deployment',
     ],
     isPopular: false,
+    href: 'mailto:sales@nebula.ai'
   },
 ];
 
@@ -109,12 +113,14 @@ export default function Pricing() {
             </CardContent>
             <CardFooter>
               <MagneticButton>
-                <Button 
-                  className={cn("w-full rounded-full", tier.isPopular && "shadow-lg shadow-primary/30")}
-                  variant={tier.isPopular ? 'default' : 'outline'}
-                >
-                  {tier.name === "Enterprise" ? "Contact Sales" : "Get Started"}
-                </Button>
+                <Link href={tier.href} className="w-full">
+                  <Button 
+                    className={cn("w-full rounded-full", tier.isPopular && "shadow-lg shadow-primary/30")}
+                    variant={tier.isPopular ? 'default' : 'outline'}
+                  >
+                    {tier.name === "Enterprise" ? "Contact Sales" : "Get Started"}
+                  </Button>
+                </Link>
               </MagneticButton>
             </CardFooter>
           </Card>
