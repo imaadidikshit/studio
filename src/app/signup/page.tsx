@@ -48,12 +48,12 @@ export default function SignUpPage() {
         
         <div className="absolute inset-0 z-0">
             <Image
-                src="https://picsum.photos/seed/signup-creative/1200/1800"
+                src="https://picsum.photos/seed/nebula-signup/1200/1800"
                 alt="Abstract background"
                 layout="fill"
                 objectFit="cover"
                 className="opacity-20"
-                data-ai-hint="abstract tech"
+                data-ai-hint="abstract technology"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
              <div className="absolute w-[30rem] h-[30rem] rounded-full bg-primary/20 blur-[120px] animate-pulse-slow-2 top-1/4 right-1/4" />
