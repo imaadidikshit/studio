@@ -115,10 +115,6 @@ export default function SignUpPage() {
               Create an account
             </Button>
           </form>
-          
-          <div className="mt-8 text-center text-sm text-muted-foreground">
-            Already have an account? <Button asChild variant="link" className="px-1.5 text-accent"><Link href="#">Sign In</Link></Button>
-          </div>
         </motion.div>
       </div>
     </div>
