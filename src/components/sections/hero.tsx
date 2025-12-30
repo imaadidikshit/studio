@@ -25,7 +25,7 @@ export default function Hero() {
         </p>
         <div className="flex justify-center items-center gap-4">
           <MagneticButton>
-            <Link href="#pricing">
+            <Link href="/signup">
               <Button size="lg" className="rounded-full shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-shadow">
                 Get Started Now
               </Button>
