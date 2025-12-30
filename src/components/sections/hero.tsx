@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import MagneticButton from '@/components/magnetic-button';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -24,14 +25,18 @@ export default function Hero() {
         </p>
         <div className="flex justify-center items-center gap-4">
           <MagneticButton>
-            <Button size="lg" className="rounded-full shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-shadow">
-              Get Started Now
-            </Button>
+            <Link href="#pricing">
+              <Button size="lg" className="rounded-full shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-shadow">
+                Get Started Now
+              </Button>
+            </Link>
           </MagneticButton>
           <MagneticButton>
-            <Button size="lg" variant="outline" className="rounded-full bg-transparent text-white border-white/20 hover:bg-white/10 hover:text-white">
-              Book a Demo
-            </Button>
+            <Link href="mailto:demo@nebula.ai">
+              <Button size="lg" variant="outline" className="rounded-full bg-transparent text-white border-white/20 hover:bg-white/10 hover:text-white">
+                Book a Demo
+              </Button>
+            </Link>
           </MagneticButton>
         </div>
       </div>

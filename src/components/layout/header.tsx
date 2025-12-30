@@ -64,9 +64,11 @@ export default function Header() {
 
         <div className="flex flex-1 items-center justify-end space-x-2">
             <MagneticButton>
-              <Button className="rounded-full">
-                Get Started
-              </Button>
+              <Link href="#pricing">
+                <Button className="rounded-full">
+                  Get Started
+                </Button>
+              </Link>
             </MagneticButton>
         </div>
       </div>
