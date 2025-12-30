@@ -8,10 +8,17 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['"Plus Jakarta Sans"', 'sans-serif'],
+        headline: ['"Playfair Display"', 'serif'],
         code: ['monospace'],
       },
       colors: {
@@ -88,12 +95,41 @@ export default {
             height: '0',
           },
         },
+        'marquee': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'pulse-slow-1': {
+          '0%, 100%': { transform: 'translate(-50%, -50%) scale(1)', opacity: '0.4' },
+          '50%': { transform: 'translate(-60%, -40%) scale(1.1)', opacity: '0.6' },
+        },
+        'pulse-slow-2': {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)', opacity: '0.3' },
+          '50%': { transform: 'translate(10%, 20%) scale(1.05)', opacity: '0.4' },
+        },
+        'pulse-slow-3': {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)', opacity: '0.2' },
+          '50%': { transform: 'translate(-15%, -10%) scale(1.1)', opacity: '0.3' },
+        },
+        'glow': {
+          '0%, 100%': {
+            boxShadow: '0 0 20px -5px hsl(var(--primary))',
+          },
+          '50%': {
+            boxShadow: '0 0 30px 5px hsl(var(--primary) / 0.8)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'marquee': 'marquee 30s linear infinite',
+        'pulse-slow-1': 'pulse-slow-1 10s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-slow-2': 'pulse-slow-2 12s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-slow-3': 'pulse-slow-3 9s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'glow': 'glow 4s ease-in-out infinite',
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), require('@headlessui/tailwindcss')],
 } satisfies Config;
