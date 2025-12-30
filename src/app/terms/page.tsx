@@ -1,14 +1,21 @@
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import { useEffect, useState } from 'react';
 
 export default function TermsOfServicePage() {
+    const [date, setDate] = useState('');
+
+    useEffect(() => {
+        setDate(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+    }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-grow py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6 prose prose-invert max-w-4xl">
           <h1 className="font-headline text-4xl font-bold mb-8">Terms of Service</h1>
-          <p className="text-muted-foreground">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p className="text-muted-foreground">Last updated: {date}</p>
 
           <h2 className="font-headline text-2xl font-bold mt-8 mb-4">1. Agreement to Terms</h2>
           <p>

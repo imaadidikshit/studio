@@ -4,33 +4,42 @@ import Link from 'next/link';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const teamMembers = [
   {
     name: 'Alex Rivera',
     role: 'CEO & Founder',
-    avatarUrl: 'https://picsum.photos/seed/1/100/100',
+    avatarUrl: PlaceHolderImages.find(img => img.id === 'team-alex')?.imageUrl ?? '',
+    avatarHint: PlaceHolderImages.find(img => img.id === 'team-alex')?.imageHint ?? '',
     bio: 'Visionary leader with a passion for leveraging AI to solve complex problems.',
   },
   {
     name: 'Samantha Chen',
     role: 'Chief Technology Officer',
-    avatarUrl: 'https://picsum.photos/seed/2/100/100',
+    avatarUrl: PlaceHolderImages.find(img => img.id === 'team-samantha')?.imageUrl ?? '',
+    avatarHint: PlaceHolderImages.find(img => img.id === 'team-samantha')?.imageHint ?? '',
     bio: 'Expert in machine learning and distributed systems, driving our technical innovation.',
   },
   {
     name: 'David Ortiz',
     role: 'Head of Product',
-    avatarUrl: 'https://picsum.photos/seed/3/100/100',
+    avatarUrl: PlaceHolderImages.find(img => img.id === 'team-david')?.imageUrl ?? '',
+    avatarHint: PlaceHolderImages.find(img => img.id === 'team-david')?.imageHint ?? '',
     bio: 'Dedicated to creating intuitive and powerful user experiences.',
   },
   {
     name: 'Maria Garcia',
     role: 'Lead Data Scientist',
-    avatarUrl: 'https://picsum.photos/seed/4/100/100',
+    avatarUrl: PlaceHolderImages.find(img => img.id === 'team-maria')?.imageUrl ?? '',
+    avatarHint: PlaceHolderImages.find(img => img.id === 'team-maria')?.imageHint ?? '',
     bio: 'Transforms complex datasets into actionable insights with advanced analytics.',
   },
 ];
+
+const missionImage = PlaceHolderImages.find(img => img.id === 'mission-collaborators');
+const storyImage = PlaceHolderImages.find(img => img.id === 'story-whiteboard');
+
 
 export default function AboutPage() {
   return (
@@ -63,14 +72,16 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="order-1 md:order-2">
-              <Image
-                src="https://picsum.photos/seed/mission/600/400"
-                alt="Our Mission"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-2xl shadow-primary/20"
-                data-ai-hint="office collaboration"
-              />
+              {missionImage && (
+                <Image
+                  src={missionImage.imageUrl}
+                  alt="Our Mission"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-2xl shadow-primary/20"
+                  data-ai-hint={missionImage.imageHint}
+                />
+              )}
             </div>
           </div>
         </section>
@@ -88,7 +99,7 @@ export default function AboutPage() {
               {teamMembers.map((member) => (
                 <div key={member.name} className="text-center">
                   <Avatar className="w-24 h-24 mx-auto mb-4 border-2 border-primary">
-                    <AvatarImage src={member.avatarUrl} alt={member.name} data-ai-hint="professional portrait" />
+                    <AvatarImage src={member.avatarUrl} alt={member.name} data-ai-hint={member.avatarHint} />
                     <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
                   </Avatar>
                   <h3 className="text-xl font-bold">{member.name}</h3>
@@ -104,14 +115,16 @@ export default function AboutPage() {
          <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
-               <Image
-                src="https://picsum.photos/seed/story/600/400"
-                alt="Our Story"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-2xl shadow-accent/20"
-                data-ai-hint="whiteboard ideas"
-              />
+              {storyImage && (
+                <Image
+                  src={storyImage.imageUrl}
+                  alt="Our Story"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-2xl shadow-accent/20"
+                  data-ai-hint={storyImage.imageHint}
+                />
+              )}
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold font-headline tracking-tighter">Our Story</h2>

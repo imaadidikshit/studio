@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "team-alex",
+      "description": "Portrait of Alex Rivera",
+      "imageUrl": "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcwODgzNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-samantha",
+      "description": "Portrait of Samantha Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcwODgzNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-david",
+      "description": "Portrait of David Ortiz",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcwODgzNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "team-maria",
+      "description": "Portrait of Maria Garcia",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcwODgzNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "mission-collaborators",
+      "description": "A team collaborating in an office",
+      "imageUrl": "https://images.unsplash.com/photo-1713947506827-c646da3ad1db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvZmZpY2UlMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc2NzAyODQ5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office collaboration"
+    },
+    {
+      "id": "story-whiteboard",
+      "description": "Ideas being sketched on a whiteboard",
+      "imageUrl": "https://images.unsplash.com/photo-1696254792135-5c0fceb27d4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3aGl0ZWJvYXJkJTIwaWRlYXN8ZW58MHx8fHwxNzY3MDM5MTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "whiteboard ideas"
+    },
+    {
+      "id": "signup-background",
+      "description": "Abstract technology background for sign-up page",
+      "imageUrl": "https://images.unsplash.com/photo-1675334758735-5f989ff8237f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzY3MDk0MTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract technology"
+    },
+    {
+      "id": "privacy-policy-hero",
+      "description": "Abstract image for privacy policy page",
+      "imageUrl": "https://images.unsplash.com/photo-1750020113747-813d3d1688c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBzZWN1cml0eXxlbnwwfHx8fDE3NjcwOTEzNDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract security"
+    },
+    {
+      "id": "terms-hero",
+      "description": "Abstract image for terms of service page",
+      "imageUrl": "https://images.unsplash.com/photo-1730629689669-5567c3d00ad5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxlZ2FsfGVufDB8fHx8MTc2NzA4OTExN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract legal"
+    }
+  ]
 }
