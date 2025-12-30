@@ -6,9 +6,9 @@ import { Menu, Bot } from 'lucide-react';
 import MagneticButton from '@/components/magnetic-button';
 
 const navLinks = [
-  { name: 'Features', href: '#features' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'Partners', href: '#partners' },
+  { name: 'Features', href: '/#features' },
+  { name: 'Pricing', href: '/#pricing' },
+  { name: 'Partners', href: '/#partners' },
 ];
 
 export default function Header() {
